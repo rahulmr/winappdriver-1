@@ -31,7 +31,7 @@
             {
                 logger.Info("Installing Windows Store App.");
                 var command = string.Format(
-                    "Powershell.exe -executionpolicy remotesigned -NonInteractive -File \"{0}\"", 
+                    "Powershell.exe -Command \"{0} -Force\"",
                     files[0].FullName);
                 logger.Debug("Command: {0}", command);
 
