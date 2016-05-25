@@ -33,7 +33,7 @@
 
         public string DriverAppID
         {
-            get { return this.PackageName + " (Modern)"; }
+            get { return this.PackageName; }
         }
 
         public Capabilities Capabilities
@@ -119,7 +119,7 @@
                 Environment.CurrentDirectory, this.AppUserModelId);
 
             var info = new ProcessStartInfo(
-                Path.Combine(Environment.CurrentDirectory, "ActivateStoreApp.exe"),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ActivateStoreApp.exe"),
                 this.AppUserModelId);
             info.UseShellExecute = false;
             info.RedirectStandardOutput = true;
