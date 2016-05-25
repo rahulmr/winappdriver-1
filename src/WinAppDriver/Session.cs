@@ -15,7 +15,7 @@ namespace WinAppDriver
             this.ID = id;
             this.Application = application;
             this.Capabilities = capabilities;
-            this.FocusOnCurrentWindow = true;
+            this.FocusOnCurrentWindow = false;
             this.ImplicitWaitMillis = 0;
             this.uiElements = new List<AutomationElement>();
         }

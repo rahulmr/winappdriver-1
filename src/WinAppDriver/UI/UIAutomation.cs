@@ -244,13 +244,13 @@ namespace WinAppDriver.UI
 
             writer.WriteAttributeString("handle", element.Handle.ToString());
 
-            writer.WriteAttributeString("x", element.X.ToString());
-            writer.WriteAttributeString("y", element.Y.ToString());
-            writer.WriteAttributeString("width", element.Width.ToString());
-            writer.WriteAttributeString("height", element.Height.ToString());
-            writer.WriteAttributeString(
-                "bounds",
-                string.Format("[{0},{1}][{2},{3}]", element.X, element.Y, element.Width, element.Height));
+            ////writer.WriteAttributeString("x", element.X.ToString());
+            ////writer.WriteAttributeString("y", element.Y.ToString());
+            ////writer.WriteAttributeString("width", element.Width.ToString());
+            ////writer.WriteAttributeString("height", element.Height.ToString());
+            ////writer.WriteAttributeString(
+            ////    "bounds",
+            ////    string.Format("[{0},{1}][{2},{3}]", element.X, element.Y, element.Width, element.Height));
 
             var node = walker.GetFirstChild(parent);
             var children = new List<AutomationElement>();
